@@ -31,11 +31,9 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
       >
-        <main className="flex-grow flex justify-center items-center p-6">
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );
